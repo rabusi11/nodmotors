@@ -1,0 +1,1037 @@
+  
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style:none;
+		
+}
+body {
+	max-width: 1084px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	height: calc(130vh - 100px);
+	
+	
+}
+html {
+	scroll-behavior: smooth;
+}
+@font-face {
+	font-family: caps;
+	src: url(../fonts/panton.ttf);
+}
+a,h1,h2,h3,p{
+	font-family: caps;
+	
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	position: relative;
+	z-index: 5;
+	
+
+}
+.burger-menu {
+	display: none;
+}
+
+.header-list {
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.info-list {
+	padding-left: 18px;
+	font-size: 14px;
+	color: #181818;
+	font-family: caps;
+
+
+}
+.info-list-book {
+		background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #FFF;
+	border: 1px solid  #badc58;
+		font-size: 14px;
+	color: black;
+	font-family: caps;
+	width: 100px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20px;
+	
+
+}
+.info-list:hover {
+		color: #6AB04C;
+	transition: color 300ms ease;
+}
+.info-list-book:hover {
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #FFF;
+}
+
+
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 680px;
+
+	
+}
+.hero-image {
+	display: flex;
+	position: relative;
+	left: 170px;
+
+
+
+
+	}
+.tesla-h1 {
+	position: relative;
+	top: 80px;
+	left: 100px;
+	font-size: 30px;
+
+}
+.tesla-p{
+	position: relative;
+	top: 50px;
+	left: 102px;
+	font-size: 14px;
+	color: #95A5A6;
+}
+.hero-content {
+	height: calc(100vh - 60px);
+   width: 100%;
+   display: block;
+   align-items: center;
+justify-content: center; 
+}
+.specifications {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	display: flex;
+	font-family: caps;
+	position: relative;
+	bottom: 30px;
+	left:70px;
+	justify-content: space-between;
+
+}
+
+
+.spec {
+	font-size: 14px;
+	color: #6AB04C;
+}
+.li-spec {
+	font-size: 32px;
+	font-weight: bold;
+	color: black;
+}
+.arrowdown {
+	position: relative;
+	bottom: 0px;
+	right: 50px;
+	cursor: pointer;
+	padding-left: 50px;
+
+}
+.history {
+	position: relative;
+	left: 30px;
+	font-size: 14px;
+	color: #95A5A6;
+
+}
+.performance-history {
+	position: relative;
+	left: -80px;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.history1{
+	
+	display: flex;
+	width: 1300px;
+	height: 34px;
+		font-size: 14px;
+	color: #95A5A6;
+
+}
+.performance {
+	position: relative;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.container {
+	padding-top: 100px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.texts {
+	
+	position: relative;
+	width: 46%;
+	display: flex;
+	justify-content: space-between;
+}
+.sometext {
+display: flex;
+justify-content: space-between;
+position: relative;
+top: 0px;
+width:75%;
+}
+.images {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+
+}
+.image2 {
+	padding-left: 20px;
+}
+.images::before {
+	content: '';
+	position: absolute;
+	background-color: #181818;
+	opacity: 0.6;
+	width: 440px;
+	height: 429px;
+	border-radius: 10px;
+}
+.sometext::after {
+	content: url('../images/Txt1.png');
+	position: absolute;
+	left: 100px;
+	z-index: 5;
+	top: 140px;
+	
+}
+.colors1 {
+    display:flex; 
+    justify-content: center;
+position: relative;
+bottom: 60px;
+left: 55px;
+    
+  }
+.colors {
+    display:flex; 
+    justify-content: center;
+position: relative;
+bottom: 70px;
+left: 55px;
+    
+  }
+.white, .black, .red {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    margin: 0 4px; 
+    border: 1px solid #95A5A6;
+
+}
+.white {
+	background-color: white;
+}
+.black {
+	background-color: black;
+}
+.red {
+	background-color: #AA071E;
+
+}
+.tesla-h1::after {
+content: url('../images/Pointer.png');
+position: relative;
+z-index: 5;
+top: 310px;
+left: 80px;
+}
+
+.tesla-h1::before {
+	content: url('../images/Pointer.png');
+	z-index: 5;
+	position: relative;
+	top: 205px;
+	left: 545px;
+}
+.tesla-p::before {
+	content: url('../images/Pointer.png');
+	position: relative;
+	z-index: 5;
+	top: 190px;
+	left: 735px;
+}
+.tesla-p::after{
+	content: url('../images/InfoPadge.png');
+	z-index: 5;
+	position: absolute;
+	top: 310px;
+	left: 330px;
+}
+
+.performance1 {
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+.raiting {
+	padding-top: 15px;
+	width: 624px;
+	height: 399px;
+	background-color: #E8F0F3;
+	border-radius: 10px;
+
+}
+.history12 {
+	width: 624px;
+	height: 107px;
+	font-size: 14px;
+	color: #95A5A6;
+
+}
+.raiting::before {
+	content: url('../images/Txt.png');
+	position: relative;
+	left: 150px;
+	top: 60px;
+}
+.mappic	{
+	position: relative;
+	bottom: 560px;
+	left: 640px;
+}
+.history122 {
+	width: 440px;
+	height: 107px;
+	font-size: 14px;
+	color: #95A5A6;
+	position: relative;
+	left: 645px;
+	bottom: 555px;
+}
+.performance12 {
+		font-size: 30px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	position: relative;
+	left: 645px;
+	bottom: 550px;
+}
+.imglist {
+	margin: 0 auto;
+	letter-spacing: 21px;
+	position: relative;
+	bottom: 480px;
+}
+.cars-h1 {
+	position: absolute;
+	left: 0;
+	top: 280px;
+	font-size: 32px;
+	font-weight: bold;
+}
+.cars-p {
+	position: absolute;
+	left: 0;
+	top: 320px;
+	font-size: 10px;
+	font-weight: normal;
+	color: #95A5A6;
+}
+.car-list {
+	width: 100%;
+	margin-top:  100px;
+	display: flex;
+	flex-wrap:  wrap ;
+	justify-content: space-around;
+	text-align: center;
+}
+.car-list li {
+	padding-bottom:100px;
+	position: relative;
+}
+.left {
+	color: #707070;
+}
+.price {
+	color: #6AB04C;
+}
+
+.list-p {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.colors {
+	position: relative;
+	left: 0;
+	bottom: 45px;
+    display:flex; 
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+  .white, .black, .red, .orange, .silver, .olive {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    margin: 0 4px; 
+    border: 1px solid #95A5A6;
+
+}
+  .white {
+	background-color: white;
+}
+.black {
+	background-color: black;
+}
+.red {
+	background-color: #AA071E;
+
+}
+.orange {
+	background-color: #FF9331;
+
+}
+.silver {
+	background-color: #95A5A6;
+}
+.olive {
+	background-color: #6AB04C;
+}
+
+h3 {
+	position: relative;
+	bottom: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.specs {
+	position: relative;
+	bottom: 30px;
+	font-size: 10px;
+	font-weight: normal;
+	color: #707070;
+	word-spacing: 15px;
+}
+.car-list {
+	position: relative;
+	top: 250px;
+
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+position: relative;
+bottom: -450px;
+}
+.nodmotors {
+	color: #95A5A6;
+	padding-left: 130px;
+
+}
+.telnum {
+	color: #95A5A6;
+	padding-right: 15px;
+}
+.mail{
+color: #95A5A6;
+
+}
+.contacts {
+	border: 1px solid red;
+	width: 100px;
+	height: 50px;
+}
+/*booking-form*/
+.name {
+	background-color: #E8F0F3;
+	width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.phone {
+	background-color: #E8F0F3;
+		width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.email {
+	background-color: #E8F0F3;
+	width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.message {
+	background-color: #E8F0F3;
+		width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	padding-bottom: 30px;
+
+}
+.send {
+	width: 216px;
+	height: 30px;
+	margin-top: 15px;
+	border-radius: 15px;
+	border: 0;
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+}
+.booking-content {
+position: fixed;
+	bottom: 400px; 
+margin: 0 auto;
+z-index: 2;
+
+}
+.booking-content::before {
+	content: '';
+	position: absolute;
+	width:1566px;
+	height: 180vh;
+	left: -220px;
+	top: -340px;
+	z-index: 0;
+	background-color: white;
+
+	opacity: 0.8;
+}
+
+.booking-h1 {
+
+padding-left: 80px;
+	font-size: 30px;
+	
+
+}
+.booking-p{
+	width: 280px;
+	height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #95A5A6;
+	display: flex;
+	text-align: center;
+}
+.booking-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+left: 400px;
+bottom: 100px; 
+}
+
+.booking-input {
+	display: flex;
+	position: absolute;
+	top: -85px;
+	left: 435px;
+	align-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 0;
+
+}
+
+
+.booking-input.mystyle {
+	font-size: 16px;
+	margin-top: 200px;
+	margin-left: 22px;
+	width: 166px;
+	height: 57px;
+	display: flex;
+	text-align: center;
+}
+.image {
+	left: 115px;
+	top: 180px;
+	position: absolute;
+	width: 52px;
+	height: 52px;
+
+}
+
+@media only screen and (max-width: 720px) {
+		header {
+		width: 300px;
+	}
+	body {
+		width:320px;
+	
+	}
+	nav	{
+		display: none;
+	}
+	.hero {
+
+		height: calc(100vh - 80px);
+	}
+	.tesla-h1::after {
+content: url('../images/gallery/Pointer.png');
+position: relative;
+z-index: 1;
+top: 140px;
+left: 75px;
+}
+
+
+.tesla-h1::before {
+	content: url('../images/gallery/Pointer.png');
+	z-index: 1;
+	position: relative;
+	top: 135px;
+	left: 185px;
+}
+.tesla-p::before {
+	content: url('../images/gallery/Pointer.png');
+	position: relative;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+	top: 160px;
+	left: 60px;
+}
+.tesla-p::after{
+	content: url('../images/gallery/InfoPadge.png');
+	z-index: 1;
+	position: relative;
+	top: 190px;
+	left: -30px;
+}
+.specifications::before {
+	content: 'new technology wheels for winter';
+	font-size: 12px;
+	color: #95A5A6;
+	position: absolute;
+	bottom: 85px;
+	left: 80px;
+}
+	.hero-image {
+		width: 450px;
+		height: 240px;
+		position: relative;
+	left: -60px;
+	top: 40px;
+
+	}
+	.tesla-h1 {
+		position: relative;
+		left: 0;
+	}
+	.tesla-p {
+		position: relative;
+		left: 0;
+	}
+	.specifications {
+		width: 280px;
+		height: 33px;
+		display: flex;
+	position: relative;
+	left: 10px;
+	top: 50px;
+		display: flex;
+		justify-content: space-between;
+		
+
+	}
+	
+	.spec {
+		font-size: 10px;
+	}
+	.li-spec {
+		font-size: 18px;
+	}
+	.arrowdown {
+		position: relative; 
+		top: 105px;
+		left: 5px;
+	}
+.colors1 {
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+.history1 {
+position: absolute;
+left: 50px;
+display: block;
+text-align: center;
+width: 280px;
+height: 69px;
+
+}
+
+
+
+.history1::after {
+content: url('../images/gallery/Info1.png');
+position: absolute;
+top: 100px;
+left: -20px;
+width: 320px;
+height: 447px;
+}
+.image1 {
+display: none;
+
+
+}
+.image2 {
+	display: none;
+}
+.images::before {
+	display: none;
+	content: '';
+	position: absolute;
+	background-color: #181818;
+	opacity: 0.6;
+	width: 440px;
+	height: 429px;
+	border-radius: 10px;
+}
+.sometext::after {
+	display: none;
+	content: url('../images/Txt1.png');
+	position: absolute;
+	left: 150px;
+	z-index: 5;
+	top: 140px;
+	
+}
+.performance {
+	position: relative;
+	left: 100px;
+}
+.performance-history {
+	position: relative;
+	top: 600px;
+	left: -40px;
+}
+.history {
+	width: 280px;
+	height: 119px;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 620px;
+	left: 45px;
+}
+
+.history::after {
+	content: url('../images/gallery/Pic2.png');
+	position: relative;
+	right: 16px;
+	top: 50px;
+	width: 420px;
+	height: 283px;
+}
+.performance1 {
+	margin-top: 20px;
+	position: relative;
+	top: 900px;
+	left: 85px;
+}
+.history12 {
+	width: 280px;
+	height: 153px;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 900px;
+		margin-bottom: 20px;
+		left: 45px;
+}
+.raiting::before {
+	display: none;
+	content: url('../images/Txt.png');
+	position: relative;
+	left: 110px;
+	top: 60px;
+}
+.raiting {
+	display: none;
+	padding-top: 15px;
+	width: 624px;
+	height: 399px;
+	background-color: #E8F0F3;
+	border-radius: 10px;
+
+}
+.history12::after {
+	content: url('../images/gallery/Rating.png');
+	position: relative;
+	top: 20px;
+	width: 350px;
+	height: 399px;
+	left: -20px;
+}
+.performance12 {
+	position: relative;
+	top: 1300px;
+	left: 100px;
+}
+.history122 {
+width: 280px;
+height: 133px;
+display: block;
+text-align: center;
+position: relative;
+top: 1320px;
+left: 45px;
+}
+.mappic {
+	display: none;
+}
+.list-p {
+	position: relative;
+	right: 50px;
+}
+.history122::after {
+	content: url('../images/gallery/MapPic.png');
+	position: relative;
+	left: -20px;
+	top: 20px;
+}
+.imglist1 {
+	display: none;
+}
+
+.imglist {
+	position: relative;
+	top: 1670px;
+	left: 60px;
+}
+.none {
+	display: none;
+}
+.cars {
+	position: relative;
+	top: 1300px;
+	left: -10px;
+}
+.cars-h1 {
+position: relative;
+left: -10px;
+
+}
+.cars-p {
+padding-left: 60px;
+
+}
+footer {
+	position: relative;
+	top: 1700px;
+	width: 320px;
+	height: 300px;
+}
+.academy-logo {
+	position: relative;
+	bottom: -90px;
+	left: 75px;
+
+}
+.nodmotors {
+position: relative;
+left: -185px;
+	font-size: 12px;
+width: 117px;
+height: 14px;
+
+}
+.telnum {
+display: flex;
+	width: 117px;
+	height: 14px;
+	font-size: 12px;
+	position: relative;
+left: -360px;
+bottom: 50px;
+}
+.mail {
+
+	font-size: 12px;
+	position: relative;
+	top: -69px;
+	left: -210px;
+
+}
+.content-box{
+	position: relative;
+	right: 30px;
+	max-width: 400px;
+}
+/*BURGER-MENU*/
+#menuToggle {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuToggle input {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  cursor: pointer;
+  opacity: 0; /* hide input */
+  z-index: 1; /* top of the menu */
+}
+
+#menuToggle span{
+  width: 35px;
+  height: 4px;
+  margin: 3px;
+ 
+  background: #fff;
+  border-radius: 4px;
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+
+#span1 {
+  transform-origin: 4px 0px;
+}
+
+#span3 {
+  transform-origin: bottom right;
+}
+
+#menuToggle input:checked ~ #span1 {
+  background-color: #fff;
+  transform: rotate(45deg) translate(3px);
+}
+#menuToggle input:checked ~ #span2 {
+  background-color: #fff;
+  transform: rotate(495deg) translate(1px);   
+}
+#menuToggle input:checked ~ #span3 {
+  background-color: #fff;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.burger-menu {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  left: 0px;
+width: 44px;
+height: 42px;
+border-radius: 5px;
+background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+}
+
+
+
+
+.booking-content {
+position: fixed;
+bottom: 400px; 
+margin: 0 auto;
+z-index: 2;
+
+}
+.booking-content::before {
+	content: '';
+	position: absolute;
+	width:450px;
+	height: 180vh;
+	left: -50px;
+	top: -600px;
+	z-index: 0;
+	background-color: white;
+	opacity: 0.8;
+}
+
+
+.booking-p{
+	width: 280px;
+	height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #95A5A6;
+	display: flex;
+	text-align: center;
+}
+.booking-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+left: 20px;
+bottom: 270px; 
+}
+
+.booking-input {
+	display: flex;
+	position: absolute;
+	top: -250px;
+	left: 65px;
+	align-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 2;
+
+}
+
+
+.booking-input.mystyle {
+	font-size: 16px;
+	margin-top: 150px;
+	margin-left: 15px;
+	width: 166px;
+	height: 57px;
+	display: flex;
+	text-align: center;
+}
+.image {
+	left: 115px;
+	top: 160px;
+	position: absolute;
+	width: 52px;
+	height: 52px;
+
+}
+}
